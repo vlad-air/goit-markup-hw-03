@@ -8,21 +8,6 @@ body {
   letter-spacing: 0.02em;
 }
 
-h2 {
-  font-size: 36px;
-  font-weight: 700;
-  color: #2e2f42;
-  line-height: 1.111111;
-  text-align: center;
-}
-
-h3 {
-  font-size: 20px;
-  font-weight: 500;
-  color: #2e2f42;
-  line-height: 1.2;
-}
-
 li {
   list-style-type: none;
 }
@@ -120,6 +105,7 @@ nav a {
 }
 
 .advantages-text {
+  font-size: 16px;
 }
 /* -----------------------3 Section Our Team------------------------ */
 
@@ -150,11 +136,12 @@ nav a {
 }
 
 .our-team-subtitle {
-  font-weight: 500;
   font-size: 20px;
+  font-weight: 500;
+  color: #2e2f42;
+  text-align: center;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: 2e2F42;
 }
 /* -----------------------4 Our Portfolio------------------------ */
 .our-portfolio-title {
@@ -168,11 +155,11 @@ nav a {
 }
 
 .our-portfolio-subtitle {
-  font-weight: 500;
   font-size: 20px;
+  font-weight: 500;
+  color: #2e2f42;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: 2e2F42;
 }
 
 .our-portfolio-text {
