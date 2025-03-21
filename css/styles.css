@@ -123,7 +123,12 @@ ol {
   align-items: center;
   gap: 40px;
 }
------------------------1 Section Hero------------------------ .visually-hidden {
+/* -----------------------1 Section Hero------------------------  */
+.hero {
+  background-color: #2e2f42;
+}
+
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -136,10 +141,6 @@ ol {
   overflow: hidden;
 }
 
-.hero {
-  background-color: #2e2f42;
-}
-
 .hero-title {
   font-size: 56px;
   font-weight: 700;
@@ -148,8 +149,8 @@ ol {
   color: #ffffff;
   letter-spacing: 0.02em;
   max-width: 496px;
-  padding-top: 180px;
-  padding-bottom: 292px;
+  padding-top: 188px;
+  /* padding-bottom: 292px; */
   margin: 0 auto;
 }
 
@@ -161,9 +162,9 @@ ol {
   cursor: pointer;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  /* margin-top: 48px;
-  margin-bottom: 188px;
-  padding: 16px 32px; */
+  border-radius: 4px;
+  width: 169px;
+  height: 56px;
 }
 
 .hero-button:hover,
@@ -171,6 +172,13 @@ ol {
   background: #404bbf;
 }
 
+.hero-container-button {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 48px;
+  padding-bottom: 188px;
+}
 /* -----------------------2 Section Advantages------------------------ */
 .advantages {
   padding-top: 120px;
