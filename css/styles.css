@@ -8,10 +8,6 @@ body {
   letter-spacing: 0.02em;
 }
 
-li {
-  list-style-type: none;
-}
-
 a {
   text-decoration: none;
   color: #434455;
@@ -28,6 +24,30 @@ nav a {
   color: #2e2f42;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* -----------------------header------------------------ */
 
 .header-logo {
@@ -40,6 +60,12 @@ nav a {
   color: #4d5ae5;
 }
 
+.logo {
+  margin-right: 76px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 .header-logo-studio {
   color: #2e2f42;
 }
@@ -47,10 +73,14 @@ nav a {
 .header-link {
   font-weight: 500;
   color: #2e2f42;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: block;
 }
 
 .address {
   font-style: normal;
+  margin-left: auto;
 }
 
 .address-link {
@@ -58,6 +88,9 @@ nav a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: block;
 }
 
 .address-link:hover,
@@ -65,7 +98,43 @@ nav a {
   color: #404bbf;
 }
 
-/* -----------------------1 Section Hero------------------------ */
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.address-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+-----------------------1 Section Hero------------------------ .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .hero {
   background-color: #2e2f42;
@@ -78,6 +147,10 @@ nav a {
   text-align: center;
   color: #ffffff;
   letter-spacing: 0.02em;
+  max-width: 496px;
+  padding-top: 180px;
+  padding-bottom: 292px;
+  margin: 0 auto;
 }
 
 .hero-button {
@@ -88,6 +161,9 @@ nav a {
   cursor: pointer;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  /* margin-top: 48px;
+  margin-bottom: 188px;
+  padding: 16px 32px; */
 }
 
 .hero-button:hover,
@@ -96,21 +172,37 @@ nav a {
 }
 
 /* -----------------------2 Section Advantages------------------------ */
+.advantages {
+  padding-top: 120px;
+}
+
 .advantages-subtitle {
   font-size: 20px;
   font-weight: 500;
   color: #2e2f42;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  padding-bottom: 8px;
 }
 
 .advantages-text {
   font-size: 16px;
 }
+
+.advantages-list {
+  display: flex;
+  gap: 24px;
+  padding-bottom: 120px;
+}
+
+.advantages-item {
+  width: calc((100% - 72px) / 4);
+}
 /* -----------------------3 Section Our Team------------------------ */
 
 .our-team {
   background-color: #f4f4fd;
+  padding-bottom: 120px;
 }
 
 .our-team li {
@@ -125,10 +217,14 @@ nav a {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  padding-bottom: 72px;
+  padding-top: 120px;
 }
 
 .our-team-text {
   font-size: 16px;
+  padding-top: 8px;
+  padding-bottom: 32px;
 }
 
 .our-team-item {
@@ -142,8 +238,18 @@ nav a {
   text-align: center;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+}
+
+.our-team-list {
+  display: flex;
+  gap: 24px;
 }
 /* -----------------------4 Our Portfolio------------------------ */
+.our-portfolio {
+  padding-bottom: 120px;
+}
+
 .our-portfolio-title {
   font-size: 36px;
   font-weight: 700;
@@ -152,6 +258,8 @@ nav a {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  padding-bottom: 72px;
+  padding-top: 120px;
 }
 
 .our-portfolio-subtitle {
@@ -160,6 +268,8 @@ nav a {
   color: #2e2f42;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  padding-left: 16px;
+  padding-top: 32px;
 }
 
 .our-portfolio-text {
@@ -167,6 +277,15 @@ nav a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding-left: 16px;
+  padding-top: 8px;
+}
+
+.our-portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
 }
 /* -----------------------Footer------------------------ */
 
@@ -190,4 +309,11 @@ nav a {
 
 .footer-text {
   color: #f4f4fd;
+  padding-top: 16px;
+}
+
+.footer-first-block {
+  max-width: 264px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
